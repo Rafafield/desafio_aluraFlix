@@ -1,0 +1,82 @@
+/* Estiliza o contêiner do cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: #121212; 
+    color: white; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000;
+    height: 125px;
+}
+
+/* Estiliza a imagem da logo */
+.cabecalho img {
+    height: 50px; 
+    width: auto; 
+}
+
+/* Estiliza o contêiner dos botões */
+.cabecalho div {
+    display: flex; 
+}
+
+.cabecalho button {
+    width: 180px;
+    height: 54px; 
+    background-color: transparent; 
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0; 
+    font-size: 20px; 
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: 'Source Code Pro';
+    transition: all 0.3s ease; 
+}
+
+/* Estilo do botão ao passar o mouse (hover) */
+.cabecalho button:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #008cff; 
+    border-color: #008cff; 
+}
+
+/* Estilo do botão ao clicar */
+.cabecalho button:active {
+    background-color: transparent; 
+    color: #008cff; 
+    border-color: #008cff; 
+}
+
+/* Adiciona um espaçamento no conteúdo principal */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3.5px; 
+    background: linear-gradient(100deg, #008cff, #008cff); 
+    box-shadow: 
+      0 0 20px #008cff, 
+      0 0 40px #008cff, 
+      0 0 2rem #008cff, 
+      0 0 120px #008cff, 
+      0 0 2rem #008cff;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+  }
+
+#root {
+    margin-top: 70px;
+}

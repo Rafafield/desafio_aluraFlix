@@ -1,0 +1,31 @@
+/* Rodape.css */
+.rodape {
+    background-color: #000; 
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .rodape::before {
+    content: ''; 
+    display: block;
+    width: 100%;
+    height: 3px; 
+    background: linear-gradient(90deg, #008cff, #008cff); 
+    box-shadow: 
+    0 0 20px #008cff, 
+    0 0 40px #008cff, 
+    0 0 2rem #008cff,  
+    0 0 120px #008cff, 
+    0 0 2rem #008cff; 
+    position: absolute;
+    top: 0; 
+    left: 0;
+  }
+  
+  .logo-rodape {
+    width: 150px; 
+    height: auto;
+    margin-top: 10px;
+  }
+  

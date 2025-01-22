@@ -1,0 +1,28 @@
+/* Estilos gerais para o grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 30px; 
+  padding: 30px;
+  
+}
+
+/* Estilos para cada card */
+.image-card {
+  padding: 5px;
+  border-radius: 8px;
+  margin-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  
+}
+
+/* Estilo das imagens dentro do card */
+.image-card img {
+  width: 100%; 
+  height: auto; 
+  margin-bottom: 0; 
+  object-fit: cover; 
+}
